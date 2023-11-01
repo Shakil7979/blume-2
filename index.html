@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Blume-2</title>
+      <!-- CSS Files--> 
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <!-- <link rel="stylesheet" href="assets/css/style.css">  -->
+      <style> 
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+         .nav-pills .nav-link.active, .nav-pills .show > .nav-link { 
+         border-radius: 999px;
+         border: 1px solid var(--Border, #E5E7EB);
+         background: var(--White, #FFF);
+         box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.02), 0px 1px 3px 0px rgba(0, 0, 0, 0.06); 
+         }
+         .nav-link:focus, .nav-link:hover {
+         color: #04070D;
+         }
+         .nav-link:focus:focus-visible {
+         outline: none !important; 
+         }
+         @media all and (max-width: 1150px){
+         .main_area {
+         margin: 0 15px;
+         }
+         }
+         @media all and (max-width: 767px){
+         #v-pills-tabContent {
+         flex: 0 0 77% !important;
+         }
+         .hero_flex {
+         flex-direction: column;
+         }
+         .single_hero {
+         margin-bottom: 30px;
+         }
+         }
+         @media all and (max-width: 576px){
+         .tabs_felx {
+         flex-direction: column;
+         }
+         #v-pills-tab {
+         flex: 0 0 100% !important; 
+         width: 100% !important;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <div class="main_area">
+         <!-- Start table info area  -->
+         <div style=" margin-top: 25px ;">
+            <div style="   width: 100%;
+               max-width: 1128px;
+               margin: 0 auto;">
+               <ul style="	list-style: none;
+                  margin: 0;
+                  padding: 0;
+                  border-radius: 20px;
+                  border: 1px solid var(--Border, #E5E7EB);
+                  padding: 16px;">
+                  <li style="	display: flex;
+                     gap: 15px;
+                     padding: 8px 0;
+                     border-bottom: 1px solid var(--Border, #E5E7EB);">
+                     <b style="	width: 100px;
+                        color: var(--Dark, #04070D);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;">Geschmack</b>
+                     <p style="	color: var(--Dark, #04070D);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin: 0;">Mild und blumig</p>
+                     </li style="	display: flex;
+                     gap: 15px;
+                     padding: 8px 0;
+                     border-bottom: 1px solid var(--Border, #E5E7EB);">
+                  <li style="	display: flex;
+                     gap: 15px;
+                     padding: 8px 0;
+                     border-bottom: 1px solid var(--Border, #E5E7EB);">
+                     <b class="width_fix" style="	width: 100px;
+                        color: var(--Dark, #04070D);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;">Zutaten</b>
+                     <p style="	color: var(--Dark, #04070D);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin: 0;">Cashews, Blaue Spirulina, Lavendel (1,5%), Weihrauch (Boswella Serata) (1%)</p>
+                  </li>
+                  <li style="	display: flex;
+                     gap: 15px;
+                     padding: 8px 0;
+                     border-bottom: 1px solid var(--Border, #E5E7EB);">
+                     <b style="	width: 100px;
+                        color: var(--Dark, #04070D);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;">Menge</b>
+                     <p style="	color: var(--Dark, #04070D);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin: 0;">150g (ca. 30 Portionen)</p>
+                  </li>
+                  <li style="	display: flex;
+                     gap: 15px;
+                     padding: 8px 0;
+                     border-bottom: 1px solid transparent;">
+                     <b style="	width: 100px;
+                        color: var(--Dark, #04070D);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;">Preis</b>
+                     <p style="	color: var(--Dark, #04070D);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin: 0;">17,90 € (Grundpreis: 11,93€ / 100g)</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!-- End table info area  -->
+         <!-- Start tabs area  -->
+         <div style=" margin: 25px 0;">
+            <div style="  width: 100%;
+               max-width: 1128px;
+               margin: 0 auto;">
+               <div class="content_tabs">
+                  <div style="justify-content: space-between;" class=" tabs_felx d-flex align-items-start">
+                     <div style="	flex: 0 0 18%;" class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button style="color: var(--Dark, #04070D);
+                           font-family: 'Poppins', sans-serif;
+                           font-size: 14px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: 22px;
+                           padding: 9px 20px; 
+                           margin-bottom: 4px;
+                           text-align: left;" class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Beschreibung</button>
+                        <button style="color: var(--Dark, #04070D);
+                           font-family: 'Poppins', sans-serif;
+                           font-size: 14px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: 22px;
+                           padding: 9px 20px; 
+                           margin-bottom: 4px;
+                           text-align: left;" class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Zutaten</button>
+                        <button style="color: var(--Dark, #04070D);
+                           font-family: 'Poppins', sans-serif;
+                           font-size: 14px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: 22px;
+                           padding: 9px 20px; 
+                           margin-bottom: 4px;
+                           text-align: left;" class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Wirkung</button>
+                        <button style="color: var(--Dark, #04070D);
+                           font-family: 'Poppins', sans-serif;
+                           font-size: 14px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: 22px;
+                           padding: 9px 20px; 
+                           margin-bottom: 4px;
+                           text-align: left;" class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Zubereitung</button>
+                        <button style="color: var(--Dark, #04070D);
+                           font-family: 'Poppins', sans-serif;
+                           font-size: 14px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: 22px;
+                           padding: 9px 20px; 
+                           margin-bottom: 4px;
+                           text-align: left;" class="nav-link" id="v-pills-FAQ-tab" data-bs-toggle="pill" data-bs-target="#v-pills-FAQ" type="button" role="tab" aria-controls="v-pills-FAQ" aria-selected="false">FAQ</button>
+                        <button style="color: var(--Dark, #04070D);
+                           font-family: 'Poppins', sans-serif;
+                           font-size: 14px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: 22px;
+                           padding: 9px 20px; 
+                           margin-bottom: 4px;
+                           text-align: left;" class="nav-link" id="v-pills-Bundles-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Bundles" type="button" role="tab" aria-controls="v-pills-Bundles" aria-selected="false">Bundles</button>
+                        <button style="color: var(--Dark, #04070D);
+                           font-family: 'Poppins', sans-serif;
+                           font-size: 14px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: 22px;
+                           padding: 9px 20px; 
+                           margin-bottom: 4px;
+                           text-align: left;" class="nav-link" id="v-pills-Bewertungen-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Bewertungen" type="button" role="tab" aria-controls="v-pills-Bewertungen" aria-selected="false">Bewertungen</button>
+                     </div>
+                     <div style="flex: 0 0 80%;" class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                           <div class="tab_connttent">
+                              <h3 style="	color: var(--Dark, #04070D);
+                                 font-family: 'Paytone One', sans-serif;
+                                 font-size: 24px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: normal;
+                                 letter-spacing: -0.48px;
+                                 margin-bottom: 16px;">Finde Deine Ruhe</h3>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Der Blue Balance Botanical Blend ist ein Superfood Mix auf Pflanzenbasis (100% Superfoods) aus Cashews, Blaue Spirulina, Lavendel und Weihrauch. Die pflanzenbasierte Mischung ist eine ideale koffeinfreie Kaffee-Alternative, wird in Berlin von Hand hergestellt und ist 100% vegan.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die natürlichen Zutaten verleihen der Blue Balance Latte einen milden und blumigen Geschmack, den wir ohne Zugabe von künstlichen Aromen, Zucker oder Süßstoffen erreichen.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Lavendel ist traditionell als Begleiter beim Einschlafen und zur Entspannung sehr beliebt, da die enthaltenen ätherischen Öle die Entspannung fördern, stresslösend wirken und das Nervensystem stärken können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die im Weihrauch enthaltenen Boswelliasäuren und ätherischen Öle können entzündungshemmend und schmerzlindernd wirken, wodurch Sie die entspannende Wirkung des Lavendel ideal unterstützen können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Unsere Blue Balance Botanical Latte unterstützt deinen Körper mit wertvollen Inhaltsstoffen</p>
+                              <ul>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin E schützt die Zellen vor oxidativem Stress*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches vorkommendes Vitamin B1 und B6, Eisen und Kupfer tragen zur normalen Funktion des Immunsystems* und Energiestoffwechsels bei*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürlich vorkommendes B6, Eisen und Magnesium reduzieren Müdigkeit und Ermüdung*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Rein natürliches Kupfer unterstützt die normale Haar- und Hautpigmentation*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin B1 trägt zur normalen Funktion des Herzens bei*</p>
+                                 </li>
+                              </ul>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">*basierend auf den anerkannten Health Claims der EFSA.</p>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                           <div class="tab_connttent">
+                              <h3 style="	color: var(--Dark, #04070D);
+                                 font-family: 'Paytone One', sans-serif;
+                                 font-size: 24px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: normal;
+                                 letter-spacing: -0.48px;
+                                 margin-bottom: 16px;">Finde Deine Ruhe</h3>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Der Blue Balance Botanical Blend ist ein Superfood Mix auf Pflanzenbasis (100% Superfoods) aus Cashews, Blaue Spirulina, Lavendel und Weihrauch. Die pflanzenbasierte Mischung ist eine ideale koffeinfreie Kaffee-Alternative, wird in Berlin von Hand hergestellt und ist 100% vegan.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die natürlichen Zutaten verleihen der Blue Balance Latte einen milden und blumigen Geschmack, den wir ohne Zugabe von künstlichen Aromen, Zucker oder Süßstoffen erreichen.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Lavendel ist traditionell als Begleiter beim Einschlafen und zur Entspannung sehr beliebt, da die enthaltenen ätherischen Öle die Entspannung fördern, stresslösend wirken und das Nervensystem stärken können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die im Weihrauch enthaltenen Boswelliasäuren und ätherischen Öle können entzündungshemmend und schmerzlindernd wirken, wodurch Sie die entspannende Wirkung des Lavendel ideal unterstützen können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Unsere Blue Balance Botanical Latte unterstützt deinen Körper mit wertvollen Inhaltsstoffen</p>
+                              <ul>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin E schützt die Zellen vor oxidativem Stress*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches vorkommendes Vitamin B1 und B6, Eisen und Kupfer tragen zur normalen Funktion des Immunsystems* und Energiestoffwechsels bei*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürlich vorkommendes B6, Eisen und Magnesium reduzieren Müdigkeit und Ermüdung*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Rein natürliches Kupfer unterstützt die normale Haar- und Hautpigmentation*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin B1 trägt zur normalen Funktion des Herzens bei*</p>
+                                 </li>
+                              </ul>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">*basierend auf den anerkannten Health Claims der EFSA.</p>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                           <div class="tab_connttent">
+                              <h3 style="	color: var(--Dark, #04070D);
+                                 font-family: 'Paytone One', sans-serif;
+                                 font-size: 24px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: normal;
+                                 letter-spacing: -0.48px;
+                                 margin-bottom: 16px;">Finde Deine Ruhe</h3>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Der Blue Balance Botanical Blend ist ein Superfood Mix auf Pflanzenbasis (100% Superfoods) aus Cashews, Blaue Spirulina, Lavendel und Weihrauch. Die pflanzenbasierte Mischung ist eine ideale koffeinfreie Kaffee-Alternative, wird in Berlin von Hand hergestellt und ist 100% vegan.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die natürlichen Zutaten verleihen der Blue Balance Latte einen milden und blumigen Geschmack, den wir ohne Zugabe von künstlichen Aromen, Zucker oder Süßstoffen erreichen.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Lavendel ist traditionell als Begleiter beim Einschlafen und zur Entspannung sehr beliebt, da die enthaltenen ätherischen Öle die Entspannung fördern, stresslösend wirken und das Nervensystem stärken können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die im Weihrauch enthaltenen Boswelliasäuren und ätherischen Öle können entzündungshemmend und schmerzlindernd wirken, wodurch Sie die entspannende Wirkung des Lavendel ideal unterstützen können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Unsere Blue Balance Botanical Latte unterstützt deinen Körper mit wertvollen Inhaltsstoffen</p>
+                              <ul>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin E schützt die Zellen vor oxidativem Stress*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches vorkommendes Vitamin B1 und B6, Eisen und Kupfer tragen zur normalen Funktion des Immunsystems* und Energiestoffwechsels bei*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürlich vorkommendes B6, Eisen und Magnesium reduzieren Müdigkeit und Ermüdung*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Rein natürliches Kupfer unterstützt die normale Haar- und Hautpigmentation*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin B1 trägt zur normalen Funktion des Herzens bei*</p>
+                                 </li>
+                              </ul>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">*basierend auf den anerkannten Health Claims der EFSA.</p>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                           <div class="tab_connttent">
+                              <h3 style="	color: var(--Dark, #04070D);
+                                 font-family: 'Paytone One', sans-serif;
+                                 font-size: 24px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: normal;
+                                 letter-spacing: -0.48px;
+                                 margin-bottom: 16px;">Finde Deine Ruhe</h3>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Der Blue Balance Botanical Blend ist ein Superfood Mix auf Pflanzenbasis (100% Superfoods) aus Cashews, Blaue Spirulina, Lavendel und Weihrauch. Die pflanzenbasierte Mischung ist eine ideale koffeinfreie Kaffee-Alternative, wird in Berlin von Hand hergestellt und ist 100% vegan.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die natürlichen Zutaten verleihen der Blue Balance Latte einen milden und blumigen Geschmack, den wir ohne Zugabe von künstlichen Aromen, Zucker oder Süßstoffen erreichen.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Lavendel ist traditionell als Begleiter beim Einschlafen und zur Entspannung sehr beliebt, da die enthaltenen ätherischen Öle die Entspannung fördern, stresslösend wirken und das Nervensystem stärken können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die im Weihrauch enthaltenen Boswelliasäuren und ätherischen Öle können entzündungshemmend und schmerzlindernd wirken, wodurch Sie die entspannende Wirkung des Lavendel ideal unterstützen können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Unsere Blue Balance Botanical Latte unterstützt deinen Körper mit wertvollen Inhaltsstoffen</p>
+                              <ul>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin E schützt die Zellen vor oxidativem Stress*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches vorkommendes Vitamin B1 und B6, Eisen und Kupfer tragen zur normalen Funktion des Immunsystems* und Energiestoffwechsels bei*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürlich vorkommendes B6, Eisen und Magnesium reduzieren Müdigkeit und Ermüdung*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Rein natürliches Kupfer unterstützt die normale Haar- und Hautpigmentation*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin B1 trägt zur normalen Funktion des Herzens bei*</p>
+                                 </li>
+                              </ul>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">*basierend auf den anerkannten Health Claims der EFSA.</p>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-FAQ" role="tabpanel" aria-labelledby="v-pills-FAQ-tab">
+                           <div class="tab_connttent">
+                              <h3 style="	color: var(--Dark, #04070D);
+                                 font-family: 'Paytone One', sans-serif;
+                                 font-size: 24px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: normal;
+                                 letter-spacing: -0.48px;
+                                 margin-bottom: 16px;">Finde Deine Ruhe</h3>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Der Blue Balance Botanical Blend ist ein Superfood Mix auf Pflanzenbasis (100% Superfoods) aus Cashews, Blaue Spirulina, Lavendel und Weihrauch. Die pflanzenbasierte Mischung ist eine ideale koffeinfreie Kaffee-Alternative, wird in Berlin von Hand hergestellt und ist 100% vegan.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die natürlichen Zutaten verleihen der Blue Balance Latte einen milden und blumigen Geschmack, den wir ohne Zugabe von künstlichen Aromen, Zucker oder Süßstoffen erreichen.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Lavendel ist traditionell als Begleiter beim Einschlafen und zur Entspannung sehr beliebt, da die enthaltenen ätherischen Öle die Entspannung fördern, stresslösend wirken und das Nervensystem stärken können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die im Weihrauch enthaltenen Boswelliasäuren und ätherischen Öle können entzündungshemmend und schmerzlindernd wirken, wodurch Sie die entspannende Wirkung des Lavendel ideal unterstützen können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Unsere Blue Balance Botanical Latte unterstützt deinen Körper mit wertvollen Inhaltsstoffen</p>
+                              <ul>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin E schützt die Zellen vor oxidativem Stress*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches vorkommendes Vitamin B1 und B6, Eisen und Kupfer tragen zur normalen Funktion des Immunsystems* und Energiestoffwechsels bei*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürlich vorkommendes B6, Eisen und Magnesium reduzieren Müdigkeit und Ermüdung*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Rein natürliches Kupfer unterstützt die normale Haar- und Hautpigmentation*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin B1 trägt zur normalen Funktion des Herzens bei*</p>
+                                 </li>
+                              </ul>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">*basierend auf den anerkannten Health Claims der EFSA.</p>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-Bundles" role="tabpanel" aria-labelledby="v-pills-Bundles-tab">
+                           <div class="tab_connttent">
+                              <h3 style="	color: var(--Dark, #04070D);
+                                 font-family: 'Paytone One', sans-serif;
+                                 font-size: 24px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: normal;
+                                 letter-spacing: -0.48px;
+                                 margin-bottom: 16px;">Finde Deine Ruhe</h3>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Der Blue Balance Botanical Blend ist ein Superfood Mix auf Pflanzenbasis (100% Superfoods) aus Cashews, Blaue Spirulina, Lavendel und Weihrauch. Die pflanzenbasierte Mischung ist eine ideale koffeinfreie Kaffee-Alternative, wird in Berlin von Hand hergestellt und ist 100% vegan.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die natürlichen Zutaten verleihen der Blue Balance Latte einen milden und blumigen Geschmack, den wir ohne Zugabe von künstlichen Aromen, Zucker oder Süßstoffen erreichen.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Lavendel ist traditionell als Begleiter beim Einschlafen und zur Entspannung sehr beliebt, da die enthaltenen ätherischen Öle die Entspannung fördern, stresslösend wirken und das Nervensystem stärken können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die im Weihrauch enthaltenen Boswelliasäuren und ätherischen Öle können entzündungshemmend und schmerzlindernd wirken, wodurch Sie die entspannende Wirkung des Lavendel ideal unterstützen können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Unsere Blue Balance Botanical Latte unterstützt deinen Körper mit wertvollen Inhaltsstoffen</p>
+                              <ul>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin E schützt die Zellen vor oxidativem Stress*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches vorkommendes Vitamin B1 und B6, Eisen und Kupfer tragen zur normalen Funktion des Immunsystems* und Energiestoffwechsels bei*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürlich vorkommendes B6, Eisen und Magnesium reduzieren Müdigkeit und Ermüdung*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Rein natürliches Kupfer unterstützt die normale Haar- und Hautpigmentation*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin B1 trägt zur normalen Funktion des Herzens bei*</p>
+                                 </li>
+                              </ul>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">*basierend auf den anerkannten Health Claims der EFSA.</p>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-Bewertungen" role="tabpanel" aria-labelledby="v-pills-Bewertungen-tab">
+                           <div class="tab_connttent">
+                              <h3 style="	color: var(--Dark, #04070D);
+                                 font-family: 'Paytone One', sans-serif;
+                                 font-size: 24px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: normal;
+                                 letter-spacing: -0.48px;
+                                 margin-bottom: 16px;">Finde Deine Ruhe</h3>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Der Blue Balance Botanical Blend ist ein Superfood Mix auf Pflanzenbasis (100% Superfoods) aus Cashews, Blaue Spirulina, Lavendel und Weihrauch. Die pflanzenbasierte Mischung ist eine ideale koffeinfreie Kaffee-Alternative, wird in Berlin von Hand hergestellt und ist 100% vegan.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die natürlichen Zutaten verleihen der Blue Balance Latte einen milden und blumigen Geschmack, den wir ohne Zugabe von künstlichen Aromen, Zucker oder Süßstoffen erreichen.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Lavendel ist traditionell als Begleiter beim Einschlafen und zur Entspannung sehr beliebt, da die enthaltenen ätherischen Öle die Entspannung fördern, stresslösend wirken und das Nervensystem stärken können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Die im Weihrauch enthaltenen Boswelliasäuren und ätherischen Öle können entzündungshemmend und schmerzlindernd wirken, wodurch Sie die entspannende Wirkung des Lavendel ideal unterstützen können.</p>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">Unsere Blue Balance Botanical Latte unterstützt deinen Körper mit wertvollen Inhaltsstoffen</p>
+                              <ul>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin E schützt die Zellen vor oxidativem Stress*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches vorkommendes Vitamin B1 und B6, Eisen und Kupfer tragen zur normalen Funktion des Immunsystems* und Energiestoffwechsels bei*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürlich vorkommendes B6, Eisen und Magnesium reduzieren Müdigkeit und Ermüdung*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Rein natürliches Kupfer unterstützt die normale Haar- und Hautpigmentation*</p>
+                                 </li>
+                                 <li>
+                                    <p style="  color: var(--Dark, #04070D);
+                                       font-family: 'Poppins', sans-serif;
+                                       font-size: 14px;
+                                       font-style: normal;
+                                       font-weight: 400;
+                                       line-height: 150%;
+                                       margin: 0;
+                                       margin-bottom: 3px;">Natürliches Vitamin B1 trägt zur normalen Funktion des Herzens bei*</p>
+                                 </li>
+                              </ul>
+                              <p style="	color: var(--Dark, #04070D);
+                                 font-family: 'Poppins', sans-serif;
+                                 font-size: 14px;
+                                 font-style: normal;
+                                 font-weight: 400;
+                                 line-height: 150%;
+                                 margin: 0;
+                                 margin-bottom: 15px;">*basierend auf den anerkannten Health Claims der EFSA.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End tabs area  -->
+         <!-- Start Hero area  -->
+         <div style="margin-bottom: 25px;">
+            <div style="  width: 100%;
+               max-width: 1128px;
+               margin: 0 auto;">
+               <div class="hero_flex" style="	display: flex;
+                  flex-wrap: wrap;
+                  align-items: center;
+                  justify-content: space-between;">
+                  <div class="single_hero"  style="flex: 0 0 32%;">
+                     <img style="width: 100%;" src="assets/images/1.png" alt="">
+                     <a style="color: var(--Dark, #04070D); 
+                        font-size: 16px;
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        display: inline-block;
+                        margin-top: 16px;
+                        text-decoration: none;" href="#">Rezepte Botanical Blends &nbsp; <img style="width: 18px;" src="assets/images/arrow-1.png" alt=""></a>
+                  </div>
+                  <div class="single_hero"  style="flex: 0 0 32%;">
+                     <img style="width: 100%;" src="assets/images/2.png" alt="">
+                     <a style="color: var(--Dark, #04070D); 
+                        font-size: 16px;
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        display: inline-block;
+                        margin-top: 16px;
+                        text-decoration: none;"  href="#">Zubereitung Botanical Blends &nbsp; <img style="width: 18px;" src="assets/images/arrow-1.png" alt=""></a>
+                  </div>
+                  <div class="single_hero"  style="flex: 0 0 32%;">
+                     <img style="width: 100%;" src="assets/images/3.png" alt="">
+                     <a style="color: var(--Dark, #04070D); 
+                        font-size: 16px;
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        display: inline-block;
+                        margin-top: 16px;
+                        text-decoration: none;"  href="#">Werde Teil der Community Instagram &nbsp; <img style="width: 18px;" src="assets/images/arrow-2.png" alt=""></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End Hero area  -->
+      </div>
+      <!-- JS Files -->
+      <script src="assets/js/jquery.min.js"></script> 
+      <script src="assets/js/bootstrap.min.js"></script>  
+   </body>
+</html>
